@@ -1,0 +1,285 @@
+{
+    // GitHub: https://github.com/Kourva/Windows95
+    "name": "Color Scheme - Windows95",
+
+    "variables": {
+        // Define variables here
+    },
+
+    // Global
+    "globals": {
+
+        // Background & Foreground
+        "foreground": "#000000ff",
+        "background": "#ddddddff",
+        
+        // Line
+        "line_highlight": "#eeeeeeff",
+
+        // Invisible
+        "invisibles": "#5b5353ff",
+
+        // Gutter
+        "gutter": "#ccccccff",
+
+        // Caret
+        "caret": "#000000ff",
+        
+        // Accent
+        "accent": "#ff0000ff",
+        "minimap_border": "#ff0000ff",
+
+        // Selection
+        "selection": "#00aaaa22",
+        "selection_border": "#ffffffff",
+        "selection_corner_style": "round",
+
+        // Spell 
+        "misspelling": "#ff0000ff",
+        "fold_marker": "#ffffffff",
+
+        // Brackets
+        "brackets_options": "bold underline",
+        "bracket_contents_options": "bold underline",
+        "brackets_foreground": "#00ff00ff",
+        "bracket_contents_foreground": "#00ff00ff",
+
+        // Tags
+        "tags_options": "bold underline",
+        "tags_foreground": "#00557fff",
+ 
+        // Shadows
+        "shadow": "#000000ff",
+        "shadow_width": "7",
+
+        // Line diff
+        "line_diff_modified": "#111111ff",
+        "line_diff_added": "#222222ff",
+        "line_diff_deleted": "#333333ff",
+        "line_diff_modified": "#555555ff",
+
+        // Guide
+        "guide": "#515151ff",
+    },
+
+    // Rules
+    "rules":
+    [
+
+        // Keywords
+        {
+            "name": "Import, return, math operators, loop keywords",
+            "scope": "keyword",
+            "foreground": "#aa04a0ff",
+            "font_style": "bold",
+        },
+
+        // Variable types
+        {
+            "name": "Variable types and arrows",
+            "scope": "storage.type",
+            "foreground": "#00aaffff",
+            "font_style": "bold",
+        },
+
+        // Variables
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "#00aa00ff",
+        },
+
+        // Parameters
+        {
+            "name": "Parameters",
+            "scope": "variable.parameter",
+            "foreground": "#555500ff",
+            "font_style": "bold",
+        },
+
+        // Function name
+        {
+            "name": "Function Definitions (and Tags)",
+            "scope": "entity.name",
+            "foreground": "#aa5500ff",
+            "font_style": "bold italic",
+
+        },
+
+        // Functions
+        {
+            "name": "Functions",
+            "scope": "variable.function entity.name.function, entity.name.function.templated, entity.name.function.member.static",
+            "foreground": "#aa5500ff",
+
+        },
+
+        // Constants
+        {
+            "name": "Constants",
+            "scope": "constant",
+            "foreground": "#ff0000ff",
+            "font_style": "bold",
+        },
+
+        // Class name
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "#ff5500ff",
+        },
+
+        // Reserved variable names (self, arguments, super)
+        {
+            "name": "This",
+            "scope": "variable.language",
+            "foreground": "#aa5500ff",
+            "font_style": "italic",
+        },
+
+        // Tag
+        {
+            "name": "Tags",
+            "scope": "entity.name.tag",
+            "foreground": "#55aaffff",
+        },
+
+        // Tag attributes
+        {
+            "name": "Tag attributes",
+            "scope": "entity.other.attribute-name",
+            "foreground": "#55aaffff",
+        },
+
+        // Markup code
+        {
+            "name": "Markup code",
+            "scope": "markup.raw",
+            "foreground": "#55aa00ff",
+        },
+
+        // Markup links
+        {
+            "name": "Markup links",
+            "scope": "markup.underline.link",
+            "foreground": "#55aaffff",
+        },
+
+        // Comments
+        {
+            "name": "Comment",
+            "scope": "comment, comment keyword, comment markup.underline.link, comment string, comment punctuation.definition, comment punctuation, comment text",
+            "foreground": "#004e75ff",
+            "font_style": "italic",
+        },
+
+        // Strings
+        {
+            "name": "String",
+            "scope": "string.quoted",
+            "foreground": "#aa2320ff",
+            "font_style": "bold",
+        },
+
+        // Numbers
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "#ff0000ff",
+        },
+
+        // Escape characters
+        { 
+            "name" : "Character escape",
+            "scope" : "constant.character.escape",
+            "foreground": "#cc0000ff" 
+        },
+
+        // Equals
+        {
+            "name": "Equals",
+            "scope": "keyword.operator.assignment, keyword.operator.arithmetic, keyword.operator.bitwise",
+            "foreground": "#00dd00ff",
+            "font_style": "bold",
+        },
+
+        // Illegal & invalid
+        {
+            "name": "Invalid illegal",
+            "scope": "invalid.illegal",
+            "foreground": "#ff0000ff",
+        },
+
+        // Linter warning
+        {
+            "name": "Linter warning",
+            "scope": "markup.warning",
+            "foreground": "#004444ff",
+        },
+
+        // Linter error
+        {
+            "name": "Linter error",
+            "scope": "markup.error",
+            "foreground": "#aa0000ff",
+        },
+
+        // Function -> call
+        { 
+            "name" : "Function names / calls",
+            "scope" : "support.function",
+            "foreground": "#dd0000ff",
+            "font_style": "bold italic"
+        },
+
+        // Global, ... Keywords
+        { 
+            "name" : "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
+            "scope" : "storage.modifier, storage.type.modifier",
+            "font_style": "italic",
+            "foreground": "#ff0000ff" 
+        },
+
+        // String label
+        { 
+            "name" : "String label",
+            "scope" : "string.unquoted.label",
+            "foreground": "#fff1f3ff" 
+        },
+
+        // Source in template string
+        { 
+            "name" : "Source in template string",
+            "scope" : "string source",
+            "foreground": "#fff1f3ff" 
+        },
+
+        // Embedded punctuation
+        { 
+            "name" : "Embedded punctuation begin / end in template string",
+            "scope" : "string source punctuation.section.embedded,string punctuation.definition.string source",
+            "foreground": "#948a8bff" 
+        },
+
+        // String regexp
+        { 
+            "name" : "String regexp begin / end",
+            "scope" : "string.regexp punctuation.definition.string.begin,string.regexp punctuation.definition.string.end",
+            "foreground": "#fd6883ff" 
+        },
+
+        // Restructured text
+        { 
+            "name" : "refs (Restructured text)",
+            "scope" : "string.other.ref,string.other.restructuredtext.ref",
+            "foreground": "#adda78ff" 
+        },
+
+        // Empty
+        // {
+        //     "name": "",
+        //     "scope": "",
+        //     "foreground": "",
+        // }
+    ]
+}
