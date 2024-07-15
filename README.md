@@ -10,14 +10,14 @@
 
 # Installation (Easier way)
 ###### step 1: Open sublime text and press `shift + ctrl + p`
-###### step 2: Select `Package Control: Add Repository` and add `https://github.com/Kourva/Windows95`
+###### step 2: Select `Package Control: Add Repository` and add `https://github.com/kozyol/Windows95`
 ###### step 3: Select `Pachake Control: Install package` and install `Windows95`
 ###### step 4: Select `UI: Select Color Scheme` and select Windows95
 
 # Installation (Manual way)
 + clone
 ```bash
-git clone https://github.com/Kourva/Windows95 && cd Windows95
+git clone https://github.com/kozyol/Windows95 && cd Windows95
 ```
 + copy
 ###### Copy the color scheme folder in sublime text config folder (Linux):
